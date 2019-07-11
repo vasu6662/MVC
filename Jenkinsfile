@@ -1,5 +1,6 @@
-@Library('shared-library')
-node {
+@Library('shared-library') _
+node(label: 'master'){
+
  def CONTAINER_NAME="jenkins-pipeline"
 	def CONTAINER_TAG="latest"
 	def gitURL = "https://github.com/vasu6662/MVC.git"
