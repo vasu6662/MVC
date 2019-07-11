@@ -1,5 +1,4 @@
 @Library('shared-library')
-node(label: 'master')
 {
 //Variables
 	def CONTAINER_NAME="jenkins-pipeline"
