@@ -1,5 +1,5 @@
 @Library('shared-library')
-
+node {
 //Variables
 	def CONTAINER_NAME="jenkins-pipeline"
 	def CONTAINER_TAG="latest"
@@ -34,3 +34,4 @@
 	
 
 	//end
+}
