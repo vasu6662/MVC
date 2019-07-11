@@ -8,7 +8,7 @@ node(label: 'master'){
 	def mvnHome = "maven"
 	def sonarqubeGoal = "clean verify sonar:sonar"
 	def pom = "pom.xml"
-	def sonarqubeServer = "Sonarcloud"
+	def sonarqubeServer = "sonar"
 	def goal = "clean install"
 
 	
