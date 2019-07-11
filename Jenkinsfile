@@ -1,7 +1,6 @@
 @Library('shared-library')
 node {
-//Variables
-	def CONTAINER_NAME="jenkins-pipeline"
+ def CONTAINER_NAME="jenkins-pipeline"
 	def CONTAINER_TAG="latest"
 	def gitURL = "https://github.com/vasu6662/MVC.git"
 	def repoBranch = "master"
@@ -31,7 +30,4 @@ node {
     stage('Maven Build'){
         mavenBuild "${mvnHome}","${pom}", "${goal}"
 	}
-	
-
-	//end
 }
