@@ -19,8 +19,14 @@ node(label: 'master'){
     
 		//Sonarqube Analysis
     stage('Sonarqube-scan'){
-        sonarqubeScan "${mvnHome}","${sonarqubeGoal}","${pom}", "${sonarqubeServer}"
+      //  sonarqubeScan "${mvnHome}","${sonarqubeGoal}","${pom}", "${sonarqubeServer}"
+      sh "mvn sonar:sonar \
+  -Dsonar.projectKey=Devops_test \
+  -Dsonar.organization=vasuabc \
+  -Dsonar.host.url=https://sonarcloud.io \
+  -Dsonar.login=8fbc5c9b24e07c8b4473c2ccdb6793e975ad261a"
     }
+    
     
 		//Quality-gate
     stage('Quality-Gate'){
