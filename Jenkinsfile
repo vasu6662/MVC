@@ -1,5 +1,5 @@
 @Library('shared-library')
-{
+
 //Variables
 	def CONTAINER_NAME="jenkins-pipeline"
 	def CONTAINER_TAG="latest"
@@ -32,5 +32,5 @@
         mavenBuild "${mvnHome}","${pom}", "${goal}"
 	}
 	
-}
+
 	//end
